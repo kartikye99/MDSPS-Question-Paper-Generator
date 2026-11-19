@@ -1,0 +1,19 @@
+{
+  "name": "mdsps-question-paper-generator",
+  "version": "1.0.0",
+  "description": "Question Paper Generator & Digitizer for Maharshi Dayanand Saraswati Public School",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "npm --prefix server start",
+    "start:client": "npm --prefix client start",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "Maharshi Dayanand Saraswati Public School",
+  "license": "ISC"
+}
